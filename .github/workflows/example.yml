@@ -1,0 +1,6 @@
+ name: update deploy status
+    if: always()
+    uses: unacast/actions-github-deployment-status@[version]
+    with:
+      github_token: ${{ secrets.GITHUB_TOKEN }}
+      status: ${{ job.status }}
