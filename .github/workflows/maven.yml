@@ -10,9 +10,7 @@ on:
     branches: [ master ]
 
 jobs:
-  tests:
-    name: Running Unit Tests
-
+  build:
     runs-on: [windows-latest]
 
     steps:
